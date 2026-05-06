@@ -1,0 +1,320 @@
+:root {
+    --primary-color: #1b4965;
+    --secondary-color: #5fa8d3;
+    --accent1-color: #cae9ff;
+    --accent2-color: #62b6cb;
+
+    --heading-font: Arial, sans-serif;
+    --body-font: Verdana, sans-serif;
+}
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global image responsiveness */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* BODY */
+body {
+    font-family: var(--body-font);
+    color: var(--primary-color)
+}
+
+/* LIMIT PAGE WIDTH */
+header,
+main,
+footer {
+    width: 1000px;
+    margin: 0 auto;
+
+}
+
+/* HEADINGS */
+h1,
+h2 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+/* BASIC SPACING */
+p,
+section,
+article {
+    margin: 16px;
+    padding: 8px;
+}
+
+/* HEADER GRID (W04) */
+header {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    align-items: center;
+    padding: 1rem;
+    background-color: wheat;
+}
+
+/* LOGO SIZE */
+header img {
+    width: 120px;
+    height: auto;
+}
+
+/* NAV FLEX (W04) */
+nav {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+}
+
+nav a {
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    color: var(--primary-color);
+    font-weight: bold;
+    background-color: wheat;
+    border: 1px solid var(--primary-color);
+    border-radius: 6px;
+}
+
+nav a:hover {
+    background-color: var(--primary-color);
+    color: wheat;
+}
+
+/* HERO STYLING */
+.hero {
+    position: relative;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* h1 overlay */
+.hero h1 {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    padding: 16px;
+    text-align: center;
+    opacity: 0.9;
+    background-color: wheat;
+
+}
+
+/* article overlay */
+.hero article {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    background-color: wheat;
+    padding: 16px;
+}
+
+/* image inside article */
+.hero article img {
+    float: right;
+    width: 125px;
+    margin-left: 16px;
+    border: 2px solid;
+}
+
+/* HISTORY SECTION */
+.history h2 {
+    text-align: center;
+}
+
+.history-content {
+    display: grid;
+    grid-template-columns: 1fr 200px 1fr;
+    gap: 1rem;
+    align-items: center;
+}
+
+.history-content img {
+    width: 100%;
+    height: auto;
+    border: 2px solid var(--primary-color);
+}
+
+/* ADVENTURES SECTION */
+.adventures h2 {
+    text-align: center;
+}
+
+.adventure-gallery {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.adventure-gallery figure {
+    width: 160px;
+    text-align: center;
+}
+
+.adventure-gallery img {
+    width: 100%;
+    height: auto;
+    border: 2px solid wheat;
+}
+
+.adventure-gallery figcaption {
+    margin-top: 8px;
+    font-weight: bold;
+}
+
+/* FOOTER */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: wheat;
+}
+
+.socialmedia {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.socialmedia img {
+    width: 30px;
+    height: auto;
+}
+
+/* CONTACT PAGE FIX */
+
+.contact-info {
+    max-width: 1000px;
+    margin: 1rem auto;
+    padding: 1rem;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    align-items: center;
+}
+
+.contact-map {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    border: 2px solid #ccc;
+}
+
+.team-grid {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    margin: 2rem auto;
+    align-items: center
+}
+
+.team-grid figure {
+    width: 30%;
+    text-align: var(--heading-font);
+}
+
+.team-grid img {
+    width: 100%;
+    height: auto;
+    max-width: 200px;
+    border-radius: 10px;
+}
+
+.contact-form {
+    max-width: 250px;
+    margin: 1rem auto;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+input,
+textarea {
+    padding: 0.6rem;
+    border-radius: 6px;
+    border: 1px solid #bbb;
+}
+
+fieldset {
+    border: 1px solid #ccc;
+    padding: 1rem;
+}
+
+button {
+    background: #004d7a;
+    color: wheat;
+    padding: 0.7rem;
+    border-radius: 6px;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+/* HOME PAGE STYLES */
+
+/* Call To Action Button */
+.cta-button {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.7rem 1.4rem;
+    background-color: var(--secondary-color);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.cta-button:hover {
+    background-color: var(--primary-color);
+}
+
+/* Newsletter Section */
+.newsletter {
+    text-align: center;
+    padding: 2rem 1rem;
+    background-color: var(--accent1-color);
+    margin: 2rem 0;
+}
+
+.newsletter form {
+    max-width: 400px;
+    margin: 1rem auto;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+/* Home Grid Layout */
+.home-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.home-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
