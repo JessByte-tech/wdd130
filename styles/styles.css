@@ -1,0 +1,135 @@
+/* =======================
+   General Styles
+======================= */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+a:hover {
+    color: steelblue;
+}
+
+/* =======================
+   Header & Footer
+======================= */
+header,
+.grid,
+footer {
+    max-width: 840px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+header {
+    text-align: center;
+    padding: 1rem 0;
+    background-color: #eef5f9;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background-color: #eef5f9;
+    font-size: 0.9rem;
+}
+
+/* =======================
+   Heading h1
+======================= */
+h1 {
+    border-bottom: 2px solid black;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+/* =======================
+   Navigation Bar
+======================= */
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: steelblue;
+    padding: 0.5rem 0;
+    margin-bottom: 1rem;
+}
+
+nav a {
+    display: block;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #4682b4;
+}
+
+/* =======================
+   Grid Layout: Aside + Main
+======================= */
+.grid {
+    display: grid;
+    grid-template-columns: 20rem 1fr;
+    /* aside left, main right */
+    align-items: start;
+    gap: 1.5rem;
+    padding-bottom: 2rem;
+}
+
+/* Aside Styling */
+aside {
+    background-color: #f5f5f5;
+    padding: 1rem;
+    border-radius: 8px;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+aside img {
+    display: block;
+    margin-bottom: 1rem;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Main Styling */
+main {
+    grid-column: 2 / 3;
+    margin: 1rem 0;
+}
+
+main img {
+    display: block;
+    margin-bottom: 1rem;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Lists Styling */
+ul.box {
+    list-style-type: square;
+    padding-left: 1.5rem;
+}
+
+ul.box li {
+    margin-bottom: 0.5rem;
+}
+
+/* Paragraph Spacing */
+p {
+    margin-bottom: 1rem;
+}
