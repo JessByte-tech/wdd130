@@ -24,7 +24,7 @@ img {
 /* BODY */
 body {
     font-family: var(--body-font);
-    color: var(--primary-color);
+    color: var(--primary-color)
 }
 
 /* LIMIT PAGE WIDTH */
