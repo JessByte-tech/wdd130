@@ -34,6 +34,9 @@ main {
 main img {
     width: 150px;
     height: auto;
+    border: ;
+    padding: ;
+    box-shadow: ;
 }
 
 aside {
