@@ -7,11 +7,11 @@ body {
     border: 3px dashed darkcyan;
     background-color: lightyellow;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: flex;
 }
 
 .flex-item {
-    width: 250px;
+    width: 100%;
     margin: 1rem;
     border: 1px solid rgb(0 0 0 / 20%);
     padding: 0.5rem;
