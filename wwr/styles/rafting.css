@@ -57,7 +57,7 @@ header {
     grid-template-columns: 150px 1fr;
     align-items: center;
     padding: 1rem;
-    background-color: wheat;
+    background-color: var(--accent2-color);
 }
 
 /* LOGO SIZE */
