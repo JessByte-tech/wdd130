@@ -58,6 +58,9 @@ main img {
     width: var(--image-width);
     height: auto;
     float: right;
+    border: 1px solid var(--border-color);
+    padding: var(--small-padding);
+    box-shadow: 0 0 30px var(--shadow-color);
 
 }
 
